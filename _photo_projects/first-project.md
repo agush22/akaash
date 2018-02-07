@@ -2,6 +2,10 @@
 title: First project
 thumbnail: /img/uploads/screams.png
 ---
-![screams](/img/uploads/screams.png)
+primera imagen
 
-![null](/img/uploads/robotweed.png)
+![robot weed](/img/uploads/robotweed.png)
+
+segunda imagen
+
+![gritando](/img/uploads/screams.png)
