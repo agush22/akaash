@@ -24,7 +24,9 @@ url: "https://flamboyant-visvesvaraya-c7c24a.netlify.com/" # the base hostname &
 twitter_username: jekyllrb
 github_username:  jekyll
 collections:
-  albums:
+  photo_projects:
+    output: true
+  design_projects:
     output: true
 
 # Build settings
