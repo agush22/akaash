@@ -24,16 +24,6 @@
   }
 }
 
-@mixin flourish-lines($width) {
-  border-top: 2px solid #000;
-  border-bottom: 2px solid #000;
-  content: "";
-  display: inline-block;
-  height: .2em;
-  position: relative;
-  vertical-align: middle;
-  width: $width;
-}
 .site-nav {
   //float: right;
   //line-height: $base-line-height * $base-font-size * 2.25;
@@ -46,6 +36,18 @@
     display: none;
   }
 
+  @mixin flourish-lines($width) {
+    $linesHeight: 8px;
+    content: "";
+    position: absolute;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    width: $width;
+    height: $linesHeight;
+    top: 50%;
+    margin-top: floor(-$linesHeight / 2);
+  }
+
   ul{
     list-style-type: none;
     display: flex;
@@ -54,21 +56,14 @@
     align-items: center;
     li {
       flex: 1 1 0;
+      & a{
+        position: relative;
+      }
       &:first-child{
         text-align: left;
-        &:after{
-          @include flourish-lines(100%);
-          left: 0.5em;
-          margin-right: -100%;
-        }
       }
       &:last-child{
         text-align: right;
-        &:before{
-          @include flourish-lines(100%);
-          right: 0.5em;
-          margin-left: -100%;
-        }
       }
     }
   }
@@ -84,24 +79,32 @@
       &:first-child{
         text-align: right;
         margin-left: 0;
-        &:after{
-          display: none;
-        }
       }
       &:last-child{
         text-align: left;
         margin-right: 0;
-        &:before{
-          display: none;
-        }
       }
     }
   }
   .fancy {
-    flex: 1 0 0;
-    margin: auto;
+    flex: 7 1 0;
+    margin: 0 1em;
     text-align: center;
     overflow: hidden;
+    & a{
+      &:before,
+      &:after{
+        @include flourish-lines(800px);
+      }
+      &:before {
+        right: 100%;
+        margin-right: 15px;
+      }
+      &:after {
+        left: 100%;
+        margin-left: 15px;
+      }
+    }
   }
   .logo{
     height: $base-font-size * 4;
@@ -155,7 +158,9 @@
       margin-bottom: 0;
       li{
         text-align: right !important;
-
+        margin: 0 auto !important;
+        padding: 0.5em;
+        border-top: 1px solid $grey-color-light;
         &.fancy{
           display: none;
         }
