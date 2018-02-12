@@ -1,6 +1,6 @@
 ---
 title: Prueba
-thumbnail: /img/uploads/_dsc0847.jpg
+thumbnail: /img/uploads/_dsc0860.jpg
 ---
 # Prueba 
 
