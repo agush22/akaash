@@ -4,9 +4,9 @@ title: Photography
 ---
 {% for project in site.photo_projects %}
   <div class="project">
-    <a href="{{ project.url }}"><img src="{{ project.thumbnail }}"/></a>
-    <div class="overlay">
+    <img src="{{ project.thumbnail }}"/>
+    <a class="overlay" href="{{ project.url }}">
       <div class="text"> {{ project.title }} </div>
-    </div>
+    </a>
   </div>
 {% endfor %}

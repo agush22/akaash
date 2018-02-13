@@ -290,15 +290,58 @@
   @include relative-font-size(1.5);
 }
 
+
 .projects{
-    display: flex;
-    flex-flow: row wrap;
-    .project{
-      flex-grow: 1;
-      flex-shrink: 0;
-      flex-basis: 25%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  .project{
+    width: 24%;
+    margin: 0.3%;
+    position: relative;
+    .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: #FFF;
     }
+    &:hover .overlay {
+      opacity: 0.8;
+    }
+
+    .text {
+      color: black;
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      text-align: center;
+      opacity: 1;
+    }
+  }
+
+  .project:nth-of-type(4n) {
+    margin-right: 0;
+  }
+
+  .project:nth-of-type(4n+1) {
+    margin-left: 0;
+  }
+  @include media-query($on-palm) {
+    .project{
+      width: 100%;
+    }
+  }
 }
+
 
 
 
