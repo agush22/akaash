@@ -3,7 +3,6 @@
  */
 .site-header {
   border-top: 5px solid $grey-color-dark;
-  border-bottom: 1px solid $grey-color-light;
   min-height: $spacing-unit * 1.865;
 
   // Positioning context for the mobile navigation icon
@@ -289,6 +288,16 @@
 .post-link {
   display: block;
   @include relative-font-size(1.5);
+}
+
+.projects{
+    display: flex;
+    flex-flow: row wrap;
+    .project{
+      flex-grow: 1;
+      flex-shrink: 0;
+      flex-basis: 25%;
+    }
 }
 
 

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: projects
 title: Photography
 ---
 {% for project in site.photo_projects %}
