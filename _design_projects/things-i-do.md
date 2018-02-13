@@ -1,0 +1,5 @@
+---
+title: things i do
+thumbnail: /img/uploads/21686087_899960416818950_7890477069157355941_n.jpg
+---
+![things i do](/img/uploads/21686087_899960416818950_7890477069157355941_n.jpg)
