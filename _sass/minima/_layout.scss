@@ -295,9 +295,10 @@
   display: flex;
   flex-flow: row wrap;
   align-items: center;
+  justify-content: space-between;
   .project{
     width: 24%;
-    margin: 0.3%;
+    margin: 0 auto 1%;
     position: relative;
     .overlay {
       position: absolute;
@@ -339,6 +340,13 @@
     .project{
       width: 100%;
     }
+  }
+}
+
+.projects-page{
+  img{
+    margin: 1em auto;
+    height: auto;
   }
 }
 

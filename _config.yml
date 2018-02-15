@@ -27,9 +27,20 @@ defaults:
       path: ""
     values:
       layout: "default"
+  - scope:
+      path: ""
+      type: "photo_projects"
+    values:
+      layout: "project-page"
+  - scope:
+      path: ""
+      type: "design_projects"
+    values:
+      layout: "project-page"
 
 include:
   - "/img"
+
 collections:
   photo_projects:
     permalink: /photography/:path/
