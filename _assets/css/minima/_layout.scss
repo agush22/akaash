@@ -36,7 +36,7 @@
   }
 
   @mixin flourish-lines($width) {
-    $linesHeight: 8px;
+    $linesHeight: 10px;
     content: "";
     position: absolute;
     border-top: 2px solid #000;
@@ -44,7 +44,7 @@
     width: $width;
     height: $linesHeight;
     top: 50%;
-    margin-top: floor(-$linesHeight / 2);
+    margin-top: floor((-$linesHeight/ 2)-1);
   }
 
   ul{
