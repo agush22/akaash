@@ -8,8 +8,8 @@ thumbnail: /img/uploads/thumbnail_05.jpg
 
 ![Skyline](/img/uploads/fullpic1.jpg)
 
-some text **its bold** and _italics_
-and a [link](http://twitter.com)
+some text **its bold** and _italics _a [link](http://twitter.com)
+
 Unordered things:
 
 * apple 
@@ -23,5 +23,7 @@ And a list
 1. first
 2. second
 3. third
+
+# Big heading!
 
 ![Skyline](/img/uploads/fullpic3.jpg)
