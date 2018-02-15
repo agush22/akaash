@@ -1,5 +1,9 @@
 ---
-title: second project
-thumbnail: /img/uploads/2017-12-23--1514009643_1067x678_scrot.png
+title: First Photo Project
+thumbnail: /img/uploads/thumbnail_01.jpg
 ---
-hola
+This is the first photo project it has some text.
+
+![Skyline](/img/uploads/fullpic1.jpg)
+![Skyline](/img/uploads/fullpic2.jpg)
+![Skyline](/img/uploads/fullpic3.jpg)
