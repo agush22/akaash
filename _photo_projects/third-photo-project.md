@@ -1,6 +1,6 @@
 ---
 title: Third Photo Project
-thumbnail: /img/uploads/thumbnail_05.jpg
+thumbnail: /img/uploads/thumbnail_04.jpg
 ---
 # This is the first photo project it has a heading.
 
