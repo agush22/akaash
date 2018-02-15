@@ -8,12 +8,13 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
   {% if page.theme == "dark" %}
-    <link rel="stylesheet" href="{{ "/assets/dark.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/assets/dark.css" | relative_url }}">
   {% else %}
-    <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   {% endif %}
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+  <link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16" />
 
   {% if page.thumbnail %}
     <meta property="og:image" content="{{ page.thumbnail }}"/>
