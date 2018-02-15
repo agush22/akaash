@@ -1,7 +1,6 @@
 ---
-title: Diseño
-thumbnail: /img/uploads/2017-12-04--1512385508_225x248_scrot.png
+title: Design Project
+thumbnail: /img/uploads/thumbnail_05.jpg
 ---
-Hola como estas
-
-![stats](/img/uploads/2017-12-04--1512385508_225x248_scrot.png)
+![Cuba1](/img/uploads/cuba1.jpg)
+![Cuba2](/img/uploads/cuba2.jpg)
