@@ -23,6 +23,20 @@
           }
         });
       }
+      var ProjectPreview = createClass({
+        render: function() {
+          var entry = this.props.entry;
+          var image = entry.getIn(['data', 'thumbnail']);
+          var bg = this.props.getAsset(image);
+          return h('div', {},
+            h('h1', {}, entry.getIn(['data', 'title'])),
+            h('img', {src: bg.toString()}),
+            h('div', {"className": "text"}, this.props.widgetFor('body'))
+          );
+        }
+      });
+      CMS.registerPreviewTemplate("photo_projects", PostPreview);
+      CMS.registerPreviewTemplate("design_projects", PostPreview);
     </script>
   </body>
 </html>

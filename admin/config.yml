@@ -5,7 +5,7 @@ backend:
 media_folder: "img/uploads" # Folder where user uploaded files should go
 
 collections: # A list of collections the CMS should be able to edit
-  - name: "photo_project" # Used in routes, ie.: /admin/collections/:slug/edit
+  - name: "photo_projects" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Photo Project" # Used in the UI, ie.: "New Post"
     folder: "_photo_projects" # The path to the folder where the documents are stored
     sort: "title:asc" # Default is title:asc
@@ -15,7 +15,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Title", name: "title", widget: "string", tagname: "h1"}
       - {label: "Featured Image", name: "thumbnail", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}
-  - name: "design_project" # Used in routes, ie.: /admin/collections/:slug/edit
+  - name: "design_projects" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Design Project" # Used in the UI, ie.: "New Post"
     folder: "_design_projects" # The path to the folder where the documents are stored
     sort: "title:asc" # Default is title:asc
