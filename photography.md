@@ -1,6 +1,8 @@
 ---
 layout: projects
 title: Photography
+theme: dark
+bg: photo
 ---
 {% for project in site.photo_projects %}
   <div class="project">

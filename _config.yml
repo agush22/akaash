@@ -32,6 +32,8 @@ defaults:
       type: "photo_projects"
     values:
       layout: "project-page"
+      bg: "photo"
+      theme: "dark"
   - scope:
       path: ""
       type: "design_projects"

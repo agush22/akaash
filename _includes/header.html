@@ -15,7 +15,13 @@
         <div class="trigger">
           <ul class="main">
             <li><a class="page-link spaced" href="/design">Graphic Design</a></li>
-            <li class="fancy"><a class="page-link" href="/"><img class="logo" src="{{ "/img/logo.png" | absolute_url }}"/ alt="Home"></a></li>
+            <li class="fancy"><a class="page-link" href="/">
+                {% if page.theme == "dark" %}
+                  <img class="logo" src="{{ "/img/logo_w.png" | absolute_url }}"/ alt="Home">
+                {% else %}
+                  <img class="logo" src="{{ "/img/logo_b.png" | absolute_url }}"/ alt="Home">
+                {% endif %}
+              </a></li>
             <li><a class="page-link spaced" href="/photography">Photography</a></li>
           </ul>
           <ul class="secondary">
