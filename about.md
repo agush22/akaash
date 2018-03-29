@@ -1,8 +1,9 @@
 ---
-layout: page
+layout: about
 title: About
 permalink: /about/
 bg: pattern
+image: about_image.jpg
 ---
 Follow the lay of the land. It's most important. Maybe there's a happy little Evergreen that lives here. Fluff that up. This is the time to get out all your flustrations, much better than kicking the dog around the house or taking it out on your spouse. Every single thing in the world has its own personality - and it is up to you to make friends with the little rascals. All you have to do is let your imagination go wild.
 

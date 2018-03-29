@@ -316,6 +316,13 @@ body.pattern{
   }
 }
 
+.about {
+  display: flex;
+  .column{
+    flex: 50%;
+  }
+}
+
 
 
 
