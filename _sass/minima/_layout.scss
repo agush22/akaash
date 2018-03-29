@@ -44,8 +44,8 @@ body.photo{
     $linesHeight: 8px;
     content: "";
     position: absolute;
-    border-top: 2px solid $text-color;
-    border-bottom: 2px solid $text-color;
+    border-top: 1px solid $text-color;
+    border-bottom: 1px solid $text-color;
     width: $width;
     height: $linesHeight;
     top: 50%;
@@ -114,7 +114,7 @@ body.photo{
     }
   }
   .logo{
-    height: $base-font-size * 4;
+    height: $base-font-size * 5;
     width: auto;
   }
   .spaced{
@@ -214,6 +214,8 @@ body.photo{
 .footer-info {
   text-align: center;
   @include relative-font-size(0.85);
+  font-weight: $base-font-weight * 0.75
+
 }
 
 /**
@@ -266,14 +268,14 @@ body.photo{
       width: 100%;
       opacity: 0;
       transition: .5s ease;
-      background-color: #FFF;
+      background-color: $text-color;
     }
     &:hover .overlay {
       opacity: 0.8;
     }
 
     .text {
-      color: black;
+      color: $background-color;
       font-size: 20px;
       position: absolute;
       top: 50%;
