@@ -1,5 +1,9 @@
 body.photo{
-  background: #0E090D url("/img/photo_bg.png") no-repeat top;
+  background: url("/img/photo_bg.png") no-repeat fixed top;
+}
+
+body.pattern{
+  background: url("/img/normal_bg.png") repeat center;
 }
 
 /**
@@ -11,7 +15,11 @@ body.photo{
   min-height: $spacing-unit * 1.865;
 
   // Positioning context for the mobile navigation icon
-  position: relative;
+  position: fixed;
+  width: 100%;
+  @include media-query($on-palm) {
+    position: relative;
+  }
 }
 
 .site-title {
@@ -221,7 +229,8 @@ body.photo{
  * Page content
  */
 .page-content {
-  padding: $spacing-unit 0;
+  padding: $spacing-unit;
+  margin-top: 150px;
 }
 
 .page-heading {

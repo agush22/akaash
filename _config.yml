@@ -37,6 +37,7 @@ defaults:
       type: "design_projects"
     values:
       layout: "project-page"
+      bg: "pattern"
 
 include:
   - "/img"

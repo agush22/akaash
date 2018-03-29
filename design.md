@@ -1,6 +1,7 @@
 ---
 layout: projects
 title: Design
+bg: pattern
 ---
 {% for project in site.design_projects %}
   <div class="project">
