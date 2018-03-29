@@ -215,7 +215,6 @@ body.photo{
   text-align: center;
   @include relative-font-size(0.85);
   font-weight: $base-font-weight * 0.75
-
 }
 
 /**
@@ -250,12 +249,12 @@ body.photo{
 
 
 .projects{
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  width: 100%;
+  margin: 0 auto;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1em;
   .project{
-    width: 24%;
     margin: 0 auto 1%;
     position: relative;
     .overlay {
