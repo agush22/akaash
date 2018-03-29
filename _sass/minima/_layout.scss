@@ -1,9 +1,9 @@
 body.photo{
-  background: url("/img/photo_bg.png") no-repeat fixed top;
+  background: $background-color url("/img/photo_bg.png") no-repeat fixed top;
 }
 
 body.pattern{
-  background: url("/img/normal_bg.png") repeat center;
+  background: $background-color url("/img/normal_bg.png") repeat center;
 }
 
 /**
